@@ -166,47 +166,47 @@
           "description":"Women's Clothing",
           "types": [
             {
-              "type_id": 5,
+              "id": 5,
               "code":"DRESSES",
               "name": "Dresses"
             },
             {
-              "type_id": 6,
+              "id": 6,
               "code":"CROPTOP",
               "name": "Crop Top"
             },
             {
-              "type_id": 7,
+              "id": 7,
               "code":"SHORTS",
               "name": "Shorts"
             },
             {
-              "type_id": 8,
+              "id": 8,
               "code":"JEANS",
               "name": "Jeans"
             },
             {
-              "type_id": 9,
+              "id": 9,
               "code":"TSHIRTS",
               "name": "T-shirt"
             },
             {
-              "type_id": 10,
+              "id": 10,
               "code":"SWEATSHIRT",
               "name": "Hoodie/Sweatshirt"
             },
             {
-              "type_id": 11,
+              "id": 11,
               "code":"TOPS",
               "name": "Tops"
             },
             {
-              "type_id": 12,
+              "id": 12,
               "code":"BOXERS",
               "name": "Boxers"
             },
             {
-              "type_id": 13,
+              "id": 13,
               "code":"KURTIS",
               "name": "Kurtis"
             }
@@ -289,7 +289,7 @@
         "size": ["S", "M", "L"],
         "color": ["Purple"],
         "discount": 10,
-        "images": ["hoodie-purple1.jpg", "hoodie-purple2.jpg"],
+        "images": ["https://codedev.b-cdn.net/products/hoodie-purple.jpg"],
         "thumbnail": "https://codedev.b-cdn.net/products/hoodie-purple.jpg",
         "rating": 4.6
       },
@@ -304,7 +304,7 @@
         "size": ["S", "M", "L"],
         "color": ["White"],
         "discount": 5,
-        "images": ["dress-white-leaves1.jpg", "dress-white-leaves2.jpg"],
+        "images": ["https://codedev.b-cdn.net/products/dress-white-leaves.jpg"],
         "thumbnail": "https://codedev.b-cdn.net/products/dress-white-leaves.jpg",
         "rating": 4.7
       },
@@ -319,7 +319,7 @@
         "size": ["S", "M", "L"],
         "color": ["White"],
         "discount": 10,
-        "images": ["crop-top-white1.jpg", "crop-top-white2.jpg"],
+        "images": ["https://codedev.b-cdn.net/products/crop-top-white.jpeg"],
         "thumbnail": "https://codedev.b-cdn.net/products/crop-top-white.jpeg",
         "rating": 4.3
       },
@@ -334,7 +334,7 @@
         "size": ["S", "M", "L"],
         "color": ["Black"],
         "discount": 15,
-        "images": ["shorts-black1.jpg", "shorts-black2.jpg"],
+        "images": ["https://codedev.b-cdn.net/products/shorts-black.jpeg"],
         "thumbnail": "https://codedev.b-cdn.net/products/shorts-black.jpeg",
         "rating": 4.5
       },
@@ -349,7 +349,7 @@
         "size": ["S", "M", "L"],
         "color": ["Blue"],
         "discount": 10,
-        "images": ["jeans-blue1.jpg", "jeans-blue2.jpg"],
+        "images": ["https://codedev.b-cdn.net/products/jeans-blue.jpeg"],
         "thumbnail": "https://codedev.b-cdn.net/products/jeans-blue.jpeg",
         "rating": 4.8
       },
@@ -364,7 +364,7 @@
         "size": ["S", "M", "L"],
         "color": ["Gray"],
         "discount": 10,
-        "images": ["sweatshirt-gray1.jpg", "sweatshirt-gray2.jpg"],
+        "images": ["https://codedev.b-cdn.net/products/sweatshirt-crewneck.jpeg"],
         "thumbnail": "https://codedev.b-cdn.net/products/sweatshirt-crewneck.jpeg",
         "rating": 4.6
       },
@@ -379,7 +379,7 @@
         "size": ["S", "M", "L"],
         "color": ["Blue"],
         "discount": 15,
-        "images": ["shorts-denim1.jpg", "shorts-denim2.jpg"],
+        "images": ["https://codedev.b-cdn.net/products/shorts-denim.jpeg"],
         "thumbnail": "https://codedev.b-cdn.net/products/shorts-denim.jpeg",
         "rating": 4.7
       },
@@ -394,7 +394,7 @@
         "size": ["S", "M", "L"],
         "color": ["Black"],
         "discount": 10,
-        "images": ["tshirt-black1.jpg", "tshirt-black2.jpg"],
+        "images": ["https://codedev.b-cdn.net/products/tshirt-black.jpg"],
         "thumbnail": "https://codedev.b-cdn.net/products/tshirt-black.jpg",
         "rating": 4.5
       },
@@ -409,7 +409,7 @@
         "size": ["S", "M", "L"],
         "color": ["Blue"],
         "discount": 15,
-        "images": ["crop-top-blue-flower1.jpg", "crop-top-blue-flower2.jpg"],
+        "images": ["https://codedev.b-cdn.net/products/crop-top-blue-flower.jpeg"],
         "thumbnail": "https://codedev.b-cdn.net/products/crop-top-blue-flower.jpeg",
         "rating": 4.3
       },
@@ -424,7 +424,7 @@
         "size": ["S", "M", "L"],
         "color": ["Black"],
         "discount": 10,
-        "images": ["crop-top-black1.jpg", "crop-top-black2.jpg"],
+        "images": ["https://codedev.b-cdn.net/products/crop-top-black.jpeg"],
         "thumbnail": "https://codedev.b-cdn.net/products/crop-top-black.jpeg",
         "rating": 4.2
       },
@@ -439,7 +439,7 @@
         "size": ["M", "L", "XL"],
         "color": ["Black"],
         "discount": 10,
-        "images": ["black-tshirt1.jpg", "black-tshirt2.jpg"],
+        "images": ["https://codedev.b-cdn.net/products/black-tshirt.jpeg"],
         "thumbnail": "https://codedev.b-cdn.net/products/black-tshirt.jpeg",
         "rating": 4.5
       },
@@ -454,7 +454,7 @@
         "size": ["M", "L", "XL"],
         "color": ["White"],
         "discount": 15,
-        "images": ["white-hoodie1.jpg", "white-hoodie2.jpg"],
+        "images": ["https://codedev.b-cdn.net/products/white-hoodie.jpeg"],
         "thumbnail": "https://codedev.b-cdn.net/products/white-hoodie.jpeg",
         "rating": 4.7
       },
@@ -469,7 +469,7 @@
         "size": ["M", "L", "XL"],
         "color": ["Blue"],
         "discount": 20,
-        "images": ["blue-jeans1.jpg", "blue-jeans2.jpg"],
+        "images": ["https://codedev.b-cdn.net/products/blue-jeans.jpg"],
         "thumbnail": "https://codedev.b-cdn.net/products/blue-jeans.jpg",
         "rating": 4.6
       },
@@ -484,7 +484,7 @@
         "size": ["M", "L", "XL"],
         "color": ["Gray"],
         "discount": 10,
-        "images": ["gray-shorts1.jpg", "gray-shorts2.jpg"],
+        "images": ["https://codedev.b-cdn.net/products/gray-shorts.jpg"],
         "thumbnail": "https://codedev.b-cdn.net/products/gray-shorts.jpg",
         "rating": 4.4
       },
@@ -499,7 +499,7 @@
         "size": ["M", "L", "XL"],
         "color": ["Black"],
         "discount": 15,
-        "images": ["black-hoodie1.jpg", "black-hoodie2.jpg"],
+        "images": ["https://codedev.b-cdn.net/products/black-hoodie.jpeg"],
         "thumbnail": "https://codedev.b-cdn.net/products/black-hoodie.jpeg",
         "rating": 4.8
       }

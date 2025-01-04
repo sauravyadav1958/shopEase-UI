@@ -1,6 +1,6 @@
 import { addToCart, deleteCart, removeFromCart, updateQuantity } from "../features/cart"
 
-
+// below dispatch,state is passed automatically to action creators by Redux middleware hence no need to import it.
 export const addItemToCartAction = (productItem)=>{
     return (dispatch,state) =>{
         dispatch(addToCart(productItem));
@@ -27,7 +27,7 @@ export const delteItemFromCartAction = (payload)=>{
 }
 
 const updateLocalStorage = (state)=>{
-    const {cartState} = state();
+    const {cartState} = state(); // getState()
     localStorage.setItem('cart',JSON.stringify(cartState?.cart))
 }
 

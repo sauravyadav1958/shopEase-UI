@@ -3,7 +3,7 @@ import Shop from "./Shop";
 import ShopApplicationWrapper from "./pages/ShopApplicationWrapper";
 import ProductListPage from "./pages/ProductListPage/ProductListPage";
 import ProductDetails from "./pages/ProductDetailPage/ProductDetails";
-import { loadProductBySlug } from "./routes/products";
+import {loadProductById } from "./routes/products";
 import AuthenticationWrapper from "./pages/AuthenticationWrapper";
 import Login from "./pages/Login/Login";
 import Register from "./pages/Register/Register";
@@ -19,7 +19,19 @@ import Orders from "./pages/Account/Orders";
 import Settings from "./pages/Account/Settings";
 import { AdminPanel } from "./pages/AdminPanel/AdminPanel";
 
-
+// createBrowserRouter: 
+// 1) For routing(define structure) and navigation(travel on routed path).
+// Structure:
+// 1) routes : Any array of Objects having: path, element, children
+// 2) options(Optional Configuration options): Object having: basename (Base URL for all routes (useful if your app is hosted in a subdirectory))
+// --------------Example-------------
+// const router = createBrowserRouter(
+//   [
+//     { path: '/', element: <Home /> },
+//     { path: '/about', element: <About /> },
+//   ],
+//   { basename: '/my-app' }
+// );
 export const router = createBrowserRouter([
     {
       path: "/",
@@ -38,8 +50,9 @@ export const router = createBrowserRouter([
           element:<ProductListPage categoryType={'MEN'}/>,
         },
         {
-          path:"/product/:slug",
-          loader: loadProductBySlug,
+          path:"/product/:id",
+          //TODO loader is not working
+          loader: loadProductById,
           element: <ProductDetails />
         },
         {

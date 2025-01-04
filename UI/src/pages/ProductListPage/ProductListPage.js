@@ -10,13 +10,14 @@ import { getAllProducts } from '../../api/fetchProducts';
 import { useDispatch, useSelector } from 'react-redux';
 import { setLoading } from '../../store/features/common'
 const categories = content?.categories;
+const p = content?.products;
 
 const ProductListPage = ({categoryType}) => {
-
+  // TODO understand useSelector and dispatch
   const categoryData = useSelector((state)=> state?.categoryState?.categories);
   const dispatch = useDispatch();
   const [products,setProducts] = useState([]);
-
+// useMemo(): recomputes the memoized value when one of the dependencies has changed
   const categoryContent = useMemo(()=>{
     return categories?.find((category)=> category.code === categoryType);
   },[categoryType]);
@@ -24,22 +25,27 @@ const ProductListPage = ({categoryType}) => {
   const productListItems = useMemo(()=>{
     return content?.products?.filter((product)=> product?.category_id === categoryContent?.id );
   },[categoryContent]);
-
+// TODO categoryData is always empty hence cateogry is always undefined.
   const category = useMemo(()=>{
     return categoryData?.find(element => element?.code === categoryType);
   },[categoryData, categoryType]);
 
   useEffect(()=>{
     dispatch(setLoading(true));
+    // function to get products of specific category
     getAllProducts(category?.id).then(res=>{
       setProducts(res);
+    // getting offline products of specific category
+    if(products.length === 0 || category === undefined){
+        setProducts(productListItems.filter((p) => p.category_id === categoryContent?.id))
+    }
     }).catch(err=>{
       
     }).finally(()=>{
       dispatch(setLoading(false));
     })
     
-  },[category?.id, dispatch]);
+  },[category?.id, dispatch, productListItems]);
 
 
   return (
@@ -65,6 +71,7 @@ const ProductListPage = ({categoryType}) => {
                   <ColorsFilter colors={categoryContent?.meta_data?.colors}/>
                   <hr></hr>
                    {/* Sizes */}
+                   {/* TODO understand SizeFilter for other Calls*/}
                    <SizeFilter sizes={categoryContent?.meta_data?.sizes}/>
             </div>
 
@@ -72,8 +79,9 @@ const ProductListPage = ({categoryType}) => {
             <p className='text-black text-lg'>{category?.description}</p>
                 {/* Products */}
                 <div className='pt-4 grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 gap-8 px-2'>
-                {products?.map((item,index)=>(
-                  <ProductCard key={item?.id+"_"+index} {...item} title={item?.name}/>
+                  {/* TODO understand ProductCard for other Calls*/}
+                {products?.map((item)=>(
+                  <ProductCard key={item?.id} {...item} title={item?.title}/>
                 ))}
                 </div>
 

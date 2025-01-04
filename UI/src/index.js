@@ -11,9 +11,13 @@ import ShopApplicationWrapper from './pages/ShopApplicationWrapper';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
+  // Provider: 
+  // 1) Makes a specific data (e.g., a Redux store, context value) globally accessible to all components in the app.
+  // 2) Eliminates "prop drilling"
     <Provider store={store}>
+      {/* provide routing configuration (router) to your React application. */}
     <RouterProvider router={router}>
-      
+      {/* global navigation bar */}
         <ShopApplicationWrapper />
       
     </RouterProvider>

@@ -11,6 +11,7 @@ const PriceFilter = () => {
   return (
     <div className='flex flex-col mb-4'>
         <p className='text-[16px] text-black mt-5 mb-5'>Price</p>
+         {/* TODO understand RangeSlider */}
         <RangeSlider className={'custom-range-slider'} min={0} max={500} defaultValue={[range.min,range.max]} onInput = {(values)=> setRange({
             min:values[0],
             max:values[1]

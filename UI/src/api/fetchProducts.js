@@ -3,7 +3,7 @@ import { API_BASE_URL, API_URLS } from "./constant"
 
 
 export const getAllProducts = async (id,typeId)=>{
-    let url = API_BASE_URL + API_URLS.GET_PRODUCTS + `?categoryId=${id}`;
+    let url = API_BASE_URL + API_URLS.GET_PRODUCTS + `?productId=${id}`;
     if(typeId){
         url = url + `&typeId=${typeId}`;
     }
@@ -16,11 +16,12 @@ export const getAllProducts = async (id,typeId)=>{
     }
     catch(err){
         console.error(err);
+        
     }
 }
 
-export const getProductBySlug = async (slug)=>{
-    const url = API_BASE_URL + API_URLS.GET_PRODUCTS + `?slug=${slug}`;
+export const getProductById = async (id)=>{
+    const url = API_BASE_URL + API_URLS.GET_PRODUCTS + `?Id=${id}`;
     try{
         const result = await axios(url,{
             method:"GET",

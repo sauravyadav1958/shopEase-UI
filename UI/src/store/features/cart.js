@@ -4,8 +4,9 @@ import { createSlice } from "@reduxjs/toolkit"
 
 const initialState = {
     cart:JSON.parse(localStorage.getItem('cart')) || []
+    // cart:localStorage.getItem('cart') === 'undefined' ? [] : JSON.parse(localStorage.getItem('cart'))
 }
-
+// createSlice: Reduces boilerplate by combining the reducer, action creators, and initial state into a single object.
 const cartSlice = createSlice({
     name:'cartState',
     initialState:initialState,
