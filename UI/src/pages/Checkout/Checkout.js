@@ -68,6 +68,7 @@ const Checkout = () => {
           <p className='font-bold'>Payment Method</p>
           <div className='mt-4 flex flex-col gap-4'>
             <div className='flex gap-2'>
+              {/* TODO clicking on this gives error */}
             <input type='radio' name='payment_mathod' value={'CARD'} onChange={()=> setPaymentMethod('CARD')}/>
             <p> Credit/Debit Card</p>
             </div>
@@ -83,7 +84,7 @@ const Checkout = () => {
           </div>
         </div>
         {paymentMethod === 'CARD' && <PaymentPage userId={userInfo?.id} addressId={userInfo?.addressList?.[0]?.id}/>}
-        
+        {/* TODO /Payment UI is not build yet */}
         {paymentMethod !== 'CARD' && <button className='w-[150px] items-center h-[48px] bg-black border rounded-lg mt-4 text-white hover:bg-gray-800' onClick={()=> navigate('/payment')}>Pay Now</button>}
       </div>
       <div className='w-[30%] h-[30%] border rounded-lg border-gray-500 p-4 flex flex-col gap-4'>

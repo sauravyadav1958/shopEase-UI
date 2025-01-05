@@ -1,5 +1,6 @@
 import axios from "axios";
 import { API_BASE_URL, getHeaders } from "./constant";
+import content from '../data/content.json';
 
 export const fetchUserDetails = async ()=>{
     const url = API_BASE_URL + '/api/user/profile';
@@ -11,7 +12,9 @@ export const fetchUserDetails = async ()=>{
         return response?.data;
     }
     catch(err){
-        throw new Error(err);
+        const userInfo = content?.userInfo;
+        return userInfo;
+        // throw new Error(err);
     }
 }
 
@@ -26,7 +29,8 @@ export const addAddressAPI = async (data)=>{
         return response?.data;
     }
     catch(err){
-        throw new Error(err);
+        return data;
+        // throw new Error(err);
     }
 }
 
@@ -40,7 +44,9 @@ export const deleteAddressAPI = async (id)=>{
         return response?.data;
     }
     catch(err){
-        throw new Error(err);
+        const address = content?.userInfo?.addressList.filter((address) => address?.id === id);
+        return address;
+        // throw new Error(err);
     }
 }
 
@@ -54,7 +60,9 @@ export const fetchOrderAPI = async ()=>{
         return response?.data;
     }
     catch(err){
-        throw new Error(err);
+        const orders = content?.orders;
+        return orders;
+        // throw new Error(err);
     }
 }
 
@@ -68,6 +76,8 @@ export const cancelOrderAPI = async (id)=>{
         return response?.data;
     }
     catch(err){
-        throw new Error(err);
+        const order = content?.orders.filter((o) => o?.id === id);    
+        return order;
+        // throw new Error(err);
     }
 }

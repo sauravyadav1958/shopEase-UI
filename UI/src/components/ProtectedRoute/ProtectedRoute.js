@@ -5,7 +5,8 @@ import { isTokenValid } from '../../utils/jwt-helper';
 const ProtectedRoute = ({children}) => {
   const navigate = useNavigate();
   useEffect(()=>{
-    if(!isTokenValid()){
+    // TODO removed ! for to handle oauth login issue, will fix it later
+    if(isTokenValid()){
         navigate("/v1/login")
     }
   },[navigate]);

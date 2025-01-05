@@ -61,6 +61,7 @@ export const router = createBrowserRouter([
         },
         {
           path:'/account-details/',
+          // <Account /> is children here
           element: <ProtectedRoute><Account /></ProtectedRoute>,
           children:[
             {
@@ -109,6 +110,7 @@ export const router = createBrowserRouter([
       path:'/confirmPayment',
       element:<ConfirmPayment />
     },
+    // TODO understanding of this admin panel
     {
       path:'/admin/*',
       element:<ProtectedRoute><AdminPanel /></ProtectedRoute>

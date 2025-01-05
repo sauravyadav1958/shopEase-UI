@@ -65,6 +65,8 @@ const CheckoutForm = ({userId,addressId}) => {
 
   return (
     <form className='items-center p-2 mt-4 w-[320px] h-[320px]' onSubmit={handleSubmit}>
+      {/*PaymentElement: provides a user-friendly interface to handle multiple payment methods */}
+      {/* As of now this will not one because stripe authentication is not done */}
       <PaymentElement />
       <button type='submit' disabled={!stripe} className='w-[150px] items-center h-[48px] bg-black border rounded-lg mt-4 text-white hover:bg-gray-800'>Pay Now</button>
       {error && <p className='text-sm pt-4 text-red-600'>{error}</p>}

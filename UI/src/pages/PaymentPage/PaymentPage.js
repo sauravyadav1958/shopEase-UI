@@ -9,7 +9,8 @@ import { selectCartItems } from '../../store/features/cart';
 
 const stripePublishableKey = process.env.STRIPE_KEY || '';
 //Publishable Key
-const stripePromise = loadStripe(stripePublishableKey);
+// TODO have given random string here, will replace it with actual key later
+const stripePromise = loadStripe('stripePublishableKey');
 
 const PaymentPage = (props) => {
 
@@ -24,6 +25,7 @@ const PaymentPage = (props) => {
       };
   return (
     <div>
+       {/* makes Stripe object available throughout the component tree. */}
         <Elements stripe={stripePromise} options={options}>
              <CheckoutForm {...props}/>   
         </Elements>

@@ -201,7 +201,9 @@ const Cart = () => {
                 {!isLoggedIn && (
                   <div className="p-4">
                     <Link
-                      to={"/v1/login"}
+                    // TODO since oauth is not working as of now
+                      // to={"/v1/login"}
+                      to={"/checkout"}
                       className="w-full p-2 items-center h-[48px] bg-black border rounded-lg mt-2 text-white hover:bg-gray-800"
                     >
                       Login to Checkout

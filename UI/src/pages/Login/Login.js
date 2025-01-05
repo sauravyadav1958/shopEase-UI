@@ -37,6 +37,7 @@ const Login = () => {
   },[dispatch, navigate, values]);
 
   const handleOnChange = useCallback((e)=>{
+    // TODO  e.persist() understanding 
     e.persist();
     setValues(values=>({
       ...values,

@@ -4,7 +4,9 @@ import { API_BASE_URL } from '../../api/constant'
 const GoogleSignIn = () => {
 
   const handleClick = useCallback(()=>{
-    window.location.href = API_BASE_URL +"/oauth2/authorization/google";
+    // window.location.href = API_BASE_URL +"/oauth2/authorization/google";
+    // TODO will remove this  when oauth will start working
+    window.location.href = "http://localhost:3000" + "/checkout";
   },[])
 
   return (

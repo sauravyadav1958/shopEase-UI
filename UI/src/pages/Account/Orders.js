@@ -86,6 +86,7 @@ const Orders = () => {
                   <p className='text-lg font-bold'>Order no. #{order?.id}</p>
                   <div className='flex justify-between mt-2'>
                     <div className='flex flex-col text-gray-500 text-sm'>
+                      {/* moment: date formating */}
                       <p>Order Date : {moment(order?.orderDate).format('MMMM DD YYYY')}</p>
                       <p>Expected Delivery Date: {moment(order?.orderDate).add(3,'days').format('MMMM DD YYYY')}</p>
                     </div>
@@ -104,7 +105,7 @@ const Orders = () => {
                           <img src={orderItem?.url} alt={orderItem?.name} className='w-[120px] h-[120px] object-cover m-2 rounded' />
                           <div className='flex flex-col text-sm py-2 text-gray-600'>
                             <p>{orderItem?.name || 'Name'}</p>
-                            <p>Quantity {orderItem?.quantity}</p>
+                            <p>Quantity: {orderItem?.quantity}</p>
                           </div>
                         </div>
                       )
@@ -116,6 +117,7 @@ const Orders = () => {
                   </div>
                   {
                     order?.orderStatus !== 'CANCELLED' && <>
+                    {/*  TODO Timeline can be understood better  */}
                     <Timeline stepCount={getStepCount[order?.orderStatus]}/>
                     {
                       getStepCount[order?.orderStatus] <=2 && 
