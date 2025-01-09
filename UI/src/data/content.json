@@ -540,32 +540,32 @@
     }
   ],
   "userInfo": {
-    "id": "userId",
-    "firstName": "firstName",
-    "lastName": "lastName",
+    "id": "user_sdajnf8112hb",
+    "firstName": "Saurav",
+    "lastName": "Yadav",
     "phoneNumber": 9999999999,
-    "email": "email",
+    "email": "saurav.yadav@gmail.com",
     "authorityList": "authorityList",
     "addressList": [
       {
         "id": "addressId",
-        "name": "addressName",
-        "street": "addressStreet",
-        "city": "addressCity",
-        "state": "addressState",
+        "name": "Marine Drive",
+        "street": "Colaba",
+        "city": "Mumbai",
+        "state": "Maharashtra",
         "zipCode": 10101
       }
     ]
   },
   "orders": [
     {
-      "id": "orderId",
-      "orderDate": "orderDate",
+      "id": "order_9A33XWu170gUtm",
+      "orderDate": "11/02/2024",
       "address": "address",
       "totalAmount": 123.11,
       "orderStatus": "IN_PROGRESS",
       "shipmentNumber": "12323",
-      "expectedDeliveryDate": "expectedDeliveryDate",
+      "expectedDeliveryDate": "11/05/2024",
       "orderItemList": [
         {
           "id": "OrderItemDetailId",

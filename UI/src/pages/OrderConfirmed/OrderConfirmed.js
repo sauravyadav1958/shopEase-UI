@@ -14,7 +14,7 @@ const OrderConfirmed = () => {
   return (
     <div className='p-8'>
         <h1 className='text-2xl'>Thank you for shopping with us!</h1>
-        <p>Your order has been successfully placed. Your order ID is <strong>{orderId}</strong>.</p>
+        <p>Your order has been successfully placed. Your order ID is <strong>{orderId || "order_9A33XWu170gUtm"} </strong>.</p>
     </div>
   )
 }

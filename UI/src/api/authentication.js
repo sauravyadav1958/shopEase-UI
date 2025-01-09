@@ -1,10 +1,13 @@
 import axios from "axios";
 import { API_BASE_URL } from "./constant"
 
-
+// async: function will be executed without blocking the main program flow
 export const loginAPI = async (body)=>{
     const url = API_BASE_URL + '/api/auth/login';
     try{
+
+        //await: pause the execution of async function until a Promise is resolved or rejected
+        // promise: represents the eventual completion (or failure) of an asynchronous operation and its resulting value.
         const response = await axios(url,{
             method:"POST",
             data:body

@@ -104,7 +104,7 @@ const Orders = () => {
                         <div key={index} className='flex gap-4'>
                           <img src={orderItem?.url} alt={orderItem?.name} className='w-[120px] h-[120px] object-cover m-2 rounded' />
                           <div className='flex flex-col text-sm py-2 text-gray-600'>
-                            <p>{orderItem?.name || 'Name'}</p>
+                            <p>Name: {orderItem?.name || 'order_name'}</p>
                             <p>Quantity: {orderItem?.quantity}</p>
                           </div>
                         </div>
