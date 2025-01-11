@@ -173,7 +173,7 @@ const ProductDetails = () => {
             {/* main image */}
             <div className='w-full md:w-[80%] flex justify-center md:pt-0 pt-10'>
               <img src={image} className='h-full w-full max-h-[520px]
-         border rounded-lg cursor-pointer object-cover' alt={product?.name} />
+         border rounded-lg cursor-pointer object-cover object-top' alt={product?.name} />
             </div>
           </div>
 
