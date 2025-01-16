@@ -1,21 +1,21 @@
-# 🛒 ShopEase Fullstack E-Commerce Project
+# 🛒 ShopEase E-Commerce Project
 
 ![image](https://github.com/user-attachments/assets/d623b68b-023e-420f-90c4-143a9285780e)
 
 
-Welcome to the Fullstack E-Commerce Shopping Project repository! This project is a work in progress and aims to build a comprehensive e-commerce application using React.js for the front-end and Spring Boot for the backend. Once completed, it will offer a complete online shopping experience with features like product browsing, cart management, and order processing.
+<!-- Welcome to the E-Commerce Shopping Project This project is a work in progress and aims to build a comprehensive e-commerce application using React.js for the front-end and Spring Boot for the backend. Once completed, it will offer a complete online shopping experience with features like product browsing, cart management, and order processing. -->
 
 ## 🛠️ Technologies Being Used
 
 - **Frontend**: React.js, Redux, Tailwind CSS, Axios
-- **Backend**: Spring Boot, Spring Security, Spring Data JPA
+<!-- - **Backend**: Spring Boot, Spring Security, Spring Data JPA
 - **Database**: PostgreSQL
 - **Authentication**: JWT (JSON Web Tokens)
 - **Payment Gateway**: (Optional integration with Stripe/PayPal)
-- **Build Tools**: Maven, Webpack
+- **Build Tools**: Maven, Webpack -->
 
 
-## Videos
+<!-- ## Videos
 - 1.https://youtu.be/p8tBD3YTCPo
 - 2.https://youtu.be/LdEO5nPOaa0
 - 3.https://youtu.be/4nGZQbY8QTI
@@ -69,7 +69,7 @@ Completed
 Your support helps in creating more content and maintaining this project. If you find this project helpful or valuable, consider buying a coffee for the creator!
 
 <a href="https://buymeacoffee.com/thecodereveal" target="_blank"><img src="https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png" alt="Buy Me A Coffee" style="height: 41px !important;width: 174px !important;box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;-webkit-box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;" ></a>
-
+ -->
 
 
   
